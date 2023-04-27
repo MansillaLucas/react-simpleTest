@@ -1,17 +1,32 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { Saludo, SegundaFuncion } from './Saludo';
+import { BotonPiola } from './PropTypes';
 
+// Obtengo el elemento root
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+root.render(
+    // Estas etiquetas se conocen como Fragment. React exige que lo que se vaya a renderizar
+    //este contenido dentro de una etiqueta padre (un div por ejemplo). Para no especificar esta
+    //etiqueta usamos fragment, el cual es un contenedor vacío que cumple esa funcion.
+    <>
+        {/* La funcion puede renderizarse sin problemas como una etiqueta */}
+        {/* Se pueden ingresar parametros como en cualquier otra etiqueta html. En caso de cadenas,
+        se usan doble comillas, mientras que para otros tipos de datos se deben usar llaves.
+        Es posible igual crear objetos con llaves, especificando un diccionario con clave y
+        valor para cada atributo de ese objeto*/}
+        <Saludo
+            name="Mariana"
+            ammount={140}
+            married={true}
+            phones={[5492804001260, 5492804391902]}
+            address={{ street: "Calle x", number: "45" }} />
+        <Saludo
+            greet="Chau"
+            name="Mauricio"
+            ammount={80}/>
+        <SegundaFuncion />
+        <BotonPiola texto='Tocáme 😏'/>
+    </>
+);
