@@ -1,3 +1,6 @@
+// Este es un componente de React. Este componente puede ser utilizado dentro de otros archivos como si fuera
+// cualquier otro tipo de etiqueta.
+
 // Por convencion de nombres, la funcion que va a renderizar elementos (componentes JSX) va a ir con mayscula
 
 // export es necesario si se quiere utilizar como un componente fuera de root. Esto le da mas independencia
@@ -20,6 +23,7 @@ export function Saludo({greet = "Hola", name="usuario", ammount=0, married=false
         return  dd + '/' + mm + '/' + yyyy;
     }
 
+    // Esta función permite discernir si un dato se presentó o no.
     function isObjectEmpty(potentialEmptyObject){
         return Object.keys(potentialEmptyObject).length === 0
         && potentialEmptyObject.constructor === Object?true:false;

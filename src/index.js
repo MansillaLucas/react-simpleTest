@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Saludo, SegundaFuncion } from './Saludo';
-import { BotonPiola } from './PropTypes';
+import { BotonBuenisimo } from './PropTypes';
 
 // Obtengo el elemento root
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -27,6 +27,6 @@ root.render(
             name="Mauricio"
             ammount={80}/>
         <SegundaFuncion />
-        <BotonPiola texto='Tocáme 😏'/>
+        <BotonBuenisimo texto='Tocáme 😏'/>
     </>
 );
