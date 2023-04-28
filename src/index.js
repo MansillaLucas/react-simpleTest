@@ -5,6 +5,7 @@ import { BotonBuenisimo } from './PropTypes';
 import {StyledPresentationCard} from './StyledPresentationCard'
 import { ComponenteClase } from './ComponenteClase';
 import { FetchAPIBoton } from './FetchAPIBoton';
+import { DataArray } from './Arrays';
 
 // Obtengo el elemento root
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -41,6 +42,8 @@ root.render(
         <ComponenteClase></ComponenteClase>
 
         <FetchAPIBoton></FetchAPIBoton>
+
+        <DataArray></DataArray>
 
     </>
 );

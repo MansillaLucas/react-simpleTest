@@ -1,4 +1,9 @@
+// npm tiene una gran variedad de componentes creados por la comunidad y que nos pueden servir para no crearlos
+// nosotros mismos. En este caso importamos dos componentes en particular, PropTypes cuyo funcionamiento lo 
+// veremos a continuación, y una biblioteca de íconos svg para que podamos usarlos en cualquier momento sin la 
+// necesidad de hacerlos nosotros mismos.
 import PropTypes from 'prop-types';
+import {GiCardPickup} from 'react-icons/gi'
 
 // Podemos incluso manejar eventos. Esto nos permite que podamos agregarle comportamiento cuanto el usuario 
 // interactue con ellos. Para esto, tenemos una lista de eventos que podemos usar sobre dichos componentes.
@@ -12,7 +17,7 @@ const handlerClick = (e) =>{
 // Crear una función par amanejar el evento no es obligatoria pero es más comoda.
 export function BotonBuenisimo({texto}){
     return <button onClick={handlerClick}>
-        {texto}
+        <GiCardPickup/>{texto}
         </button>
 }
 
