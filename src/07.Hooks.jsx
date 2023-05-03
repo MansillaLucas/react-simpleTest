@@ -6,7 +6,7 @@
 // * useContext
 import { useState, useEffect } from "react"
 
-export function UseState() {
+export function HookFunction() {
 
     const [mensaje, setMensaje] = useState('')
     const [contador, setContador] = useState(0)

@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { Saludo, SegundaFuncion } from './Saludo';
-import { BotonBuenisimo } from './PropTypes';
-import {StyledPresentationCard} from './StyledPresentationCard'
-import { ComponenteClase } from './ComponenteClase';
-import { FetchAPIBoton } from './FetchAPIBoton';
-import { DataArray } from './Arrays';
+import { Saludo, SegundaFuncion } from './01.Componente';
+import { BotonBuenisimo } from './02.Paquetes_npm';
+import {StyledPresentationCard} from './03.Estilos'
+import { ComponenteClase } from './04.Componentes_clases';
+import { FetchAPIBoton } from './05.FetchAPI';
+import { DataArray } from './06.Arrays';
+import { HookFunction } from './07.Hooks';
 
 // Obtengo el elemento root
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -44,6 +45,8 @@ root.render(
         <FetchAPIBoton></FetchAPIBoton>
 
         <DataArray></DataArray>
+
+        <HookFunction></HookFunction>
 
     </>
 );
