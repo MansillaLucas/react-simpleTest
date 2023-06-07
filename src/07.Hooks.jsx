@@ -3,7 +3,9 @@
 // Hay tres hooks en particular que vamos a usar con regularidad:
 // * useState para establecer estados dentro del componente.
 // * useEffect para realizar una accion al alterar un estado del componente.
-// * useContext
+// * useContext crea un contexto global en donde todos sus atributos pueden ser usados fuera del los componentes.
+// * useRef guarda un elemento HTML dentro de una variable para que pueda usarse como referencia luego.
+
 import { useState, useEffect } from "react"
 
 export function HookFunction() {
